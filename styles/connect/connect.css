@@ -1,0 +1,10 @@
+@import '../default/default.css';
+@import '../../fonts/icon/style.css';
+@import '../header/header.css';
+@import '../main/main.css';
+@import '../footer/footer.css';
+@import '../../fonts/font/stylesheet.css';
+@import '../login/login.css';
+@import '../registration/registration.css';
+@import '../modal/modal.css';
+@import '../forgotpassword/forgotpassword.css';/*# sourceMappingURL=connect.css.map */

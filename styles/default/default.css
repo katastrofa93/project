@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li, a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+main {
+  flex: 1 1 auto;
+}/*# sourceMappingURL=default.css.map */

@@ -1,0 +1,148 @@
+@media (min-width: 310px) and (max-width: 1024px){
+    footer{
+        padding: 10px;
+        background: black;
+    }
+    .container{
+        margin: 0 auto;
+        max-width: 1280px;
+    }
+    .footer__section {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .footer__ul {
+    }
+    .footer__li {
+        & > a{
+            color: white;
+        }
+    }
+    .footer__subscribe {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+    .subscribe-social {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        & > p{
+            color: white;
+        }
+    }
+    .subscribe-social__ul {
+        display: flex;
+        gap: 16px;
+    }
+    .subscribe-social__li {
+        & > a{
+            color: white;
+        }
+    }
+    .icon-vk {
+    }
+    .icon-instagram {
+    }
+    .icon-telegram {
+    }
+    .footer__form {
+        display: flex;
+        & > input{
+            color: black;
+            background-color: white;
+            border: none;
+            outline: none;
+            padding: 5px;
+            &:nth-child(2){
+                background: #009dce;
+                color: white;
+            }
+        }
+    }
+    .form-email {
+    }
+    .form-send {
+    }
+    .footer__date {
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 1024px){
+    footer{
+        padding: 10px;
+        background: black;
+    }
+    .container{
+        margin: 0 auto;
+        max-width: 1280px;
+    }
+    .footer__section {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .footer__ul {
+    }
+    .footer__li {
+        & > a{
+            color: white;
+        }
+    }
+    .footer__subscribe {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+    .subscribe-social {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        & > p{
+            color: white;
+        }
+    }
+    .subscribe-social__ul {
+        display: flex;
+        gap: 16px;
+    }
+    .subscribe-social__li {
+        & > a{
+            color: white;
+        }
+    }
+    .icon-vk {
+    }
+    .icon-instagram {
+    }
+    .icon-telegram {
+    }
+    .footer__form {
+        display: flex;
+        & > input{
+            color: black;
+            background-color: white;
+            border: none;
+            outline: none;
+            padding: 5px;
+            &:nth-child(2){
+                background: #009dce;
+                color: white;
+            }
+        }
+    }
+    .form-email {
+    }
+    .form-send {
+    }
+    .footer__date {
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+}
