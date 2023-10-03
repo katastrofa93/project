@@ -107,10 +107,10 @@
             </div>
         </footer>
     </div>
+    <script src="js/autor.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/burger.js"></script>
     <script src="js/subscribe.js"></script>
-    <script src="js/autor.js"></script>
     <script src="js/login.js"></script>
     <script src="js/registration.js"></script>
     <script src="js/recoverPassword.js"></script>
