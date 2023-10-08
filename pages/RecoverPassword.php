@@ -15,9 +15,6 @@
                             <input type="text" name="rep_pass" placeholder="Repeat your new password">
                             <input type="submit" value="send" name="send" class="recoverSend">
                         </form>
-                        <div>
-                            <span class="message" style="color: red"></span>
-                        </div> 
                     </div>
                 </article>
             </section>

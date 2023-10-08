@@ -1,3 +1,39 @@
-@media (min-width: 310px) and (max-width: 1920px){
-    
+@media (min-width: 310px){
+    .modal{
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+        transform: translateY(-105%);
+    }
+    .modal_active{
+        transform: translateY(0%);
+        transition: 0.3s;
+    }
+    .modal__alert {
+        padding: 10px 30px;
+        background: #ededed;
+        box-shadow: 0px 0px 3px 2px #ccc;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+    }
+    .modal__close{
+        display: flex;
+        justify-content: flex-end;
+        & > input{
+            padding: 5px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background: #0089ff;
+            color: white;
+            border-radius: 3px;
+            &:active{
+                background: #0066c0;
+            }
+        }
+    }
 }

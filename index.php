@@ -7,8 +7,8 @@
     $routing->addRout('/login', 'login.php');
     $routing->addRout('/PrivacyPolicy', 'PrivacyPolicy.php');
     $routing->addRout('/registration', 'registration.php');
-    $routing->addRout('/forgot-password', 'forgotPassword.php');
-    $routing->addRout('/passwordrecovery', 'passwordRecovery.php');
+    $routing->addRout('/forgotpassword', 'forgotPassword.php');
+    
 
     function enterExit(){
         if($_SESSION['login']){
@@ -39,8 +39,15 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="modal">
-            <h2></h2>
+    <div class="modal">
+            <article class="modal__alert">
+                <div class="modal__message">
+                    <h3 class=""></h3>
+                </div>
+                <div class="modal__close">
+                    <input type="submit" value="Закрыть">
+                </div>
+            </article>
         </div>
         <header>
             <div class="container">
@@ -107,13 +114,13 @@
             </div>
         </footer>
     </div>
-    <script src="js/autor.js"></script>
+    <script src="js/classToFetch.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/burger.js"></script>
     <script src="js/subscribe.js"></script>
     <script src="js/login.js"></script>
     <script src="js/registration.js"></script>
-    <script src="js/recoverPassword.js"></script>
+    <script src="js/forgotPassword.js"></script>
     <script>
         const list = document.querySelector('.home__carts');
         let arrayGoods = [
@@ -135,7 +142,8 @@
             list.innerHTML = result;
     </script>
     <script>
-        //console.log(formLogin.login);
+        console.log(sendForgot);
+        
     </script>
 </body>
 </html>

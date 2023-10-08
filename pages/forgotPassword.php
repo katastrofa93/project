@@ -9,13 +9,10 @@
                         <h2>Restore password</h2>
                         <p>to recover your password, enter your email address that you provided during registration</p>
                     </div>
-                    <form action="../sys/ForgotPassword.php" method="post" class="form">
+                    <form action="" method="" class="formForgot">
                         <input type="text" name="email" placeholder="Your Email">
-                        <input type="submit" value="send" name="send">
+                        <input type="submit" value="send" name="send" class="sendForgot">
                     </form>
-                    <div>
-                        <span class="message" style="color: red"></span>
-                    </div> 
                 </div>
             </article>
         </section>

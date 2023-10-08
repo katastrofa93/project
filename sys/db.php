@@ -1,5 +1,5 @@
 <?php
-    $connect = new mysqli('localhost', 'root', '', 'project_4');
+    $connect = new mysqli('127.0.0.1:3306', 'root', '', 'project_4');
     //$create_db = 'CREATE DATABASE project_4';
     /*$create_table = 'CREATE TABLE registration (id INTEGER AUTO_INCREMENT PRIMARY KEY,
     login VARCHAR(45), email VARCHAR(45), password VARCHAR(60), photo VARCHAR(45), dTime VARCHAR(30))';*/

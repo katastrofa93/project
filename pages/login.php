@@ -22,7 +22,7 @@ echo '
                 </form>
                 <ul class="login__actions">
                     <li class="login__actions-li"><a href="/registration">Registration</a></li>
-                    <li class="login__actions-li"><a href="/forgot-password">Forgot password</a></li>
+                    <li class="login__actions-li"><a href="/forgotpassword">Forgot password</a></li>
                 </ul>
                 <div>
                      <span class="message" style="color: red"></span>

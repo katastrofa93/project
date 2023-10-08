@@ -4,6 +4,7 @@ const sendSubscribe = document.querySelector('.form-send');
 
 const subscribe = new ToFetch(srcSubscribe, formSubscribe, sendSubscribe);
 subscribe.event();
+log.close();
     
     
 

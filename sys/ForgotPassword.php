@@ -2,7 +2,7 @@
     require 'db.php';
     $email = $_POST['email'];
     $send = $_POST['send'];
-    //написать функцию message для JSON формата
+    
 
     class Forgot {
         public $email;
@@ -11,6 +11,10 @@
         public $subject;
         public $message;
         public $headers;
+        public function message($answer){
+            $message = array($answer);
+            echo json_encode($message, JSON_UNESCAPED_UNICODE);
+        }
         public function check(){
             $sel = "SELECT * FROM registration WHERE email = '$this->email';";
             if($result = $this->connect->query($sel)){
@@ -21,15 +25,15 @@
                     if($this->email == $value['email']){
                         $result = mail($this->email, $this->subject, $this->message, $this->headers);
                         if($result){
-                            echo 1;
+                            $this->message('A link for password recovery has been sent to your email');
                         }else{
-                            echo 0;
+                            $this->message('Error');
                         }
                     }else{
-                        echo 'the user with the email '.$this->email.' does not exist';
+                        $this->message('the user with the email '.$this->email.' does not exist');
                     }
                 }else{
-                    echo 'Поле пустое';
+                    $this->message('The password recovery field is empty');
                 }
             }
         }

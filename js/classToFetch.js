@@ -1,3 +1,6 @@
+const modalWindow = document.querySelector('.modal');
+const closeMoalWindow = document.querySelector('.modal__close');
+const textModalWindow = document.querySelector('.modal__message>h3');
 class ToFetch{
     constructor(src, formData, send){
         this.src= src;
@@ -16,7 +19,8 @@ class ToFetch{
                 answer.then(
                     result => {
                         console.log(`Resolve ${result}`);
-                        modal.innerText = result;
+                        textModalWindow.innerText = result;
+                        modalWindow.classList.add('modal_active');
                     },
                       error => {
                         console.log(`Rejected ${error}`); 
@@ -35,8 +39,14 @@ class ToFetch{
         this.send.addEventListener('click', (e)=>{
             e.preventDefault();
             this.select();
-            //1. написать проверку 2.сброс формы
+        });
+    }
+    close(){
+        closeMoalWindow.addEventListener('click', (e)=>{
+            e.preventDefault();
+            modalWindow.classList.remove('modal_active');
         });
     }
 }
+
 

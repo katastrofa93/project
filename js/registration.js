@@ -4,3 +4,4 @@ const pathRegistration = '../sys/Registration.php';
 
 const reg = new ToFetch(pathRegistration, formRegistration, sendRegistration);
 reg.event();
+log.close();
